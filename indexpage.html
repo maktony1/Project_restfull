@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <link rel="stylesheet" href="indexpage.css">
+        
+        
+     
+
+
+
+
+
+
+        
+        
+    </head>
+   
+   
+   
+   
+     <style type="text/css">
+        ul, li {
+            list-style:none;
+        }
+        /* header*/
+        
+        header {
+            width:100%;
+            height:75px;
+            position: fixed;
+            z-index:9999;
+            left:0; top:0;
+            background-color: #8A93C0;  
+        }
+        
+        .logo {
+            float: left;
+            height:75px;
+        }
+        
+        .wrapper {
+            width:1170px; 
+            margin:0 auto;
+        }
+        
+        .menu {
+            list-style-type:none;
+            float:right;
+            font-size:17px;
+        }
+        
+        .menu li {
+            float:left;
+        }
+        
+        .menu a {
+            line-height:75px;
+            color:white;
+            padding: 0 15px;
+            display:block;
+        }
+        
+        .dropdown {
+            position:relative;
+            display:inline-block;
+        }
+        
+        .dropbtn {
+            background-color:#8A93C0;
+            line-height:75px;
+            color:white;
+            padding:0 15px;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color:#8A93C0;
+            min-width: 150px;
+            z-index: 1;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 5px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: white;
+            
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #5a648e;
+        }
+
+        strong {
+            color:#8A93C0;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .form-control {
+            align-items: center;
+            text-align: center;
+
+        }
+        
+        .aaa {
+            margin-top: auto;
+            margin-bottom: auto;
+            float: none;
+            margin: 0 auto;
+            vertical-align: center;
+        }
+
+        #mainimg {
+            text-align: center;
+        }
+        
+        a:link {
+            color: white;
+            text-decoration:none;
+        }
+
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: none;
+        }
+
+        footer {
+            width:100%;
+            height:200px;
+            margin-top: 50px;
+            background-color: #c3c3c3;  
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+   <header>
+       <div class="wrapper">
+            <div class="logo">
+                <a href="#"><img src="C:\pic\logo3.jpg"/></a>
+            </div>
+
+            <nav>
+            <ul class="menu">
+                 <li><a href="#"> <b>글작성하기</b></a></li>
+                 <li><a href="#"> <b>여행코스짜기</b></a></li>
+                 <div class="dropdown">
+                     <button class="dropbtn">
+                       더보기
+                     </button>
+                     <div class="dropdown-content">
+                         <a href="#">공지사항</a>
+                         <a href="#">이벤트</a>
+                         <a href="#">자주하는질문</a>
+                     </div>
+                 </div>
+                 <li><a href="#"> <b>로그인</b></a></li>
+                 <li><a href="#"> <b>회원가입</b></a></li>
+            </ul>   
+            </nav>
+        </div>
+    </header>
+
+   
+    <div style="padding-top: 200px" class="col-xs-8 aaa align-self-auto">
+        <h3><strong>어느 지역</strong><b>으로 여행을 가시나요?</b></h3>
+
+        <!-- 검색창 -->
+        <form action="/hms/accommodations" method="GET">
+            <div class="row">
+                <div class="aaa col-xs-2 col-md-7">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="지역입력" id="txtSearch" />
+
+                        <div class="input-group-btn">
+                            <button class="btn btn-secondary" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <!--메인페이지사진-->
+    <div id="mainimg">
+        <img src="screenshots/colorlogobic.jpg" style="padding-top: 50px;">
+    </div>
+
+    <footer style="opacity:0.9; font-size:15px; color:white;">
+        <nav style="padding-top: 50px;">
+            <a href="#"><b>회사소개 </b></a>
+            <a href="#"><b>이용약관 </b></a>
+            <a href="#"><b>운영정책 </b></a>
+            <a href="#"><b>여행지등록 </b></a>
+            <a href="#"><b>고객센터 </b></a>
+
+        </nav>
+        <hr>
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="span8">
+                    <a href="#">개인정보처리방침 </a>
+                    |
+                    <a href="#">청소년보호방침</a>
+                </div>
+                <div class="span4">
+                    <p class="muted pull-right"> © 2020 RestFuLL. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+     </footer>
+
+
+
+
+
+
+
+
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function() {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+
+    </script>
+
+
+</body>
+
+</html>
