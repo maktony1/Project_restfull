@@ -418,7 +418,7 @@ select::-ms-expand {
 	width: 240px;
 	height: 44px;
 	background-image:
-		url(screenshots/signlogo.jpg);
+		url(picture/signlogo.jpg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	-webkit-background-size: 240px auto;
