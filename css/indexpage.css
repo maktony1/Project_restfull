@@ -1,0 +1,32 @@
+strong {
+    color: rgb(207, 89, 21);
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    text-align: right;
+}
+
+.form-control {
+  align-items:center;
+  text-align: center;
+ 
+}
+
+
+.aaa {
+    margin-top: auto;
+    margin-bottom: auto;
+    float: none; margin: 0 auto;
+    vertical-align: center;
+    
+}
+#mainimg {
+     text-align: center;
+    max-height: 80ex;
+    
+}
+
